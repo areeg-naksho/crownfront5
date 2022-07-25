@@ -1,0 +1,39 @@
+.how-we-work {
+  background-color: var(--sixth-color);
+  padding: 20px 20px 20px;
+  .small_screen {
+    .image_small {
+      display: none;
+    }
+  }
+}
+@media (min-width: 500px) and(max-width:600px) {
+  .how-we-work {
+    background-color: var(--sixth-color);
+
+    .image_large {
+      display: none;
+    }
+    .small_screen {
+      padding-left: 100px;
+      .image_small {
+        display: flex;
+      }
+    }
+  }
+}
+@media (min-width: 300px) and(max-width:500px) {
+  .how-we-work {
+    background-color: var(--sixth-color);
+    .image_large {
+      display: none;
+    }
+    .small_screen {
+      padding-left: 30px;
+      .image_small {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.our-farms {
+  margin: 50px 0;
+  .container {
+    h2 {
+      font-size: 45px;
+      color: var(--second-color);
+      font-weight: 600;
+    }
+    .logos {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+      padding: 0 30px;
+      gap: 50px;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .container {
+    padding: 15px 150px !important;
+    .logos {
+      padding: 0 15px !important;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)) !important;
+    }
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    padding: 15px 90px !important;
+    .logos {
+      padding: 0 15px !important;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)) !important;
+    }
+  }
+}
+@media (max-width: 790px) {
+  .our-farms {
+    .container {
+      padding: 30px !important;
+      h2 {
+        font-size: 30px !important;
+      }
+      .logos {
+        padding: 0 15px !important;
+        gap: 20px !important;
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)) !important;
+      }
+    }
+  }
+
+}
+@media (max-width: 500px) {
+  .our-farms {
+    .container {
+      padding: 15px !important;
+      .logos {
+        padding: 0 10px !important;
+        gap: 20px !important;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)) !important;
+      }
+    }
+  }
+
+}
